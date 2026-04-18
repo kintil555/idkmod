@@ -1,0 +1,13 @@
+{
+  "block.texturepaint.textured_block": "Textured Block",
+  "item.texturepaint.npc_spawner": "NPC Spawner",
+  "itemGroup.texturepaint.main": "Texture Painter",
+  "screen.texturepaint.texture_selector": "Select Block Texture",
+  "screen.texturepaint.npc_pose": "NPC Pose Editor",
+  "screen.texturepaint.apply": "Apply",
+  "screen.texturepaint.done": "Done",
+  "screen.texturepaint.left_arm": "Left Arm Pitch",
+  "screen.texturepaint.right_arm": "Right Arm Pitch",
+  "screen.texturepaint.head_pitch": "Head Pitch",
+  "screen.texturepaint.head_yaw": "Head Yaw"
+}

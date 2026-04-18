@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.example.texturepaint.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": ["client.MouseScrollMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

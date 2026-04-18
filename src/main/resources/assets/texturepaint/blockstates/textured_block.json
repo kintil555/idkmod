@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "texturepaint:block/textured_block" }
+  }
+}

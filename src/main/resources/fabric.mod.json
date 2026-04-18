@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "texturepaint",
+  "version": "${version}",
+  "name": "Texture Painter",
+  "description": "Paint any block with another block's texture, and place pose-able NPC player entities.",
+  "authors": [{ "name": "Example" }],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.texturepaint.TexturePainterMod"],
+    "client": ["com.example.texturepaint.TexturePainterModClient"]
+  },
+  "mixins": ["texturepaint.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

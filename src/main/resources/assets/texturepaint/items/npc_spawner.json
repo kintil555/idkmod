@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "texturepaint:item/npc_spawner"
+  }
+}
