@@ -1,6 +1,7 @@
 package com.example.texturepaint;
 
 import com.example.texturepaint.block.TexturedBlockEntity;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -14,11 +15,7 @@ public class ModBlockEntities {
         TEXTURED_BLOCK_ENTITY = Registry.register(
             Registries.BLOCK_ENTITY_TYPE,
             Identifier.of(TexturePainterMod.MOD_ID, "textured_block"),
-            BlockEntityType.create(
-                TexturePainterMod.MOD_ID + ":textured_block",
-                TexturedBlockEntity::new,
-                ModBlocks.TEXTURED_BLOCK
-            )
+            FabricBlockEntityTypeBuilder.create(TexturedBlockEntity::new, ModBlocks.TEXTURED_BLOCK).build()
         );
     }
 
