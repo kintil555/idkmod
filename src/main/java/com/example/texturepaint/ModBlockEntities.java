@@ -14,7 +14,11 @@ public class ModBlockEntities {
         TEXTURED_BLOCK_ENTITY = Registry.register(
             Registries.BLOCK_ENTITY_TYPE,
             Identifier.of(TexturePainterMod.MOD_ID, "textured_block"),
-            BlockEntityType.create(TexturedBlockEntity::new, ModBlocks.TEXTURED_BLOCK)
+            BlockEntityType.create(
+                TexturePainterMod.MOD_ID + ":textured_block",
+                TexturedBlockEntity::new,
+                ModBlocks.TEXTURED_BLOCK
+            )
         );
     }
 
