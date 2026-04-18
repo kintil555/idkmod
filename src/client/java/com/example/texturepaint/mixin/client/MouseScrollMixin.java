@@ -19,7 +19,7 @@ public abstract class MouseScrollMixin {
     private MinecraftClient client;
 
     @Inject(method = "onMouseScroll", at = @At("HEAD"), cancellable = true)
-    private void onMouseScroll(long window, double horizontal, double vertical, CallbackInfo ci) {
+    private void onMouseScroll(long window, double horizontal, double vertical, boolean discrete, CallbackInfo ci) {
         if (client.player == null || client.currentScreen != null) return;
         if (!client.player.isSneaking()) return;
         if (vertical == 0) return;
